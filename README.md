@@ -84,7 +84,7 @@ curl -X 'POST' \
 
 
 
-<br>
+<br><br>
 🛠️ Tecnologias utilizadas<br>
 <br>
 .NET 10
@@ -92,7 +92,7 @@ ASP.NET Core Web API
 Serviços de IA (Computer Vision / NLP)
 Armazenamento em nuvem (ex: AWS S3)
 
-<br>
+<br><br>
 💡 Casos de uso<br>
 <br>
 E-commerce (cadastro automático de produtos)
@@ -101,7 +101,7 @@ Apps de revenda (tipo OLX / Mercado Livre)
 Organização de catálogos
 Automação de inventário
 
-<br>
+<br><br>
 📈 Diferenciais<br>
 <br>
 Reduz esforço manual no cadastro de produtos
@@ -109,7 +109,7 @@ Melhora SEO com tags automáticas
 Enriquece dados com descrição inteligente
 Escalável e fácil de integrar
 
-<br>
+<br><br>
 👨‍💻 Autor<br>
 <br>
 Renato Estecio
