@@ -61,7 +61,9 @@ curl -X 'POST' \
   "type": "Console PlayStation 5"
 }
 
+
 🎯 Funcionalidades
+
 
 ✔️ Upload de imagens via API REST
 
@@ -78,6 +80,8 @@ curl -X 'POST' \
 ✔️ Geração de descrição inteligente
 
 ✔️ Sugestão de preço baseada no item
+
+
 
 🛠️ Tecnologias utilizadas
 
