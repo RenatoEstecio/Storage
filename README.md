@@ -83,7 +83,7 @@ curl -X 'POST' \
 
 
 
-
+<br>
 🛠️ Tecnologias utilizadas<br>
 
 .NET 10
