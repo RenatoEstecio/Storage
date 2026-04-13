@@ -1,7 +1,7 @@
 **Product Vision API (Storage)**
-
+<br>
 Uma aplicação inteligente que recebe uma imagem de produto e extrai automaticamente informações relevantes usando visão computacional e IA.
-
+<br>
 🚀 Sobre o projeto
 
 O Product Vision API é uma API que analisa imagens de produtos e retorna dados estruturados úteis para e-commerce, catálogos e sistemas de recomendação.
@@ -38,7 +38,7 @@ curl -X 'POST' \
   -F 'file=@produto.jpg;type=image/jpeg'
 <br>
 ![PS5](https://github.com/user-attachments/assets/ee58771e-631b-4f20-b8e2-8a39684b5104)
-  
+  <br>
 📦 Exemplo de resposta
 {
   "name": "Console PlayStation 5 com jogos",
@@ -64,7 +64,7 @@ curl -X 'POST' \
 
 <br>
 🎯 Funcionalidades
-
+<br>
 
 ✔️ Upload de imagens via API REST
 
@@ -86,7 +86,7 @@ curl -X 'POST' \
 
 <br>
 🛠️ Tecnologias utilizadas<br>
-
+<br>
 .NET 10
 ASP.NET Core Web API
 Serviços de IA (Computer Vision / NLP)
@@ -94,7 +94,7 @@ Armazenamento em nuvem (ex: AWS S3)
 
 <br>
 💡 Casos de uso
-
+<br>
 E-commerce (cadastro automático de produtos)
 Marketplaces
 Apps de revenda (tipo OLX / Mercado Livre)
@@ -103,7 +103,7 @@ Automação de inventário
 
 <br>
 📈 Diferenciais
-
+<br>
 Reduz esforço manual no cadastro de produtos
 Melhora SEO com tags automáticas
 Enriquece dados com descrição inteligente
@@ -111,5 +111,5 @@ Escalável e fácil de integrar
 
 <br>
 👨‍💻 Autor
-
+<br>
 Renato Estecio
