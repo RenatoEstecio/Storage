@@ -84,7 +84,7 @@ curl -X 'POST' \
 
 
 
-🛠️ Tecnologias utilizadas
+🛠️ Tecnologias utilizadas<br>
 
 .NET 10
 ASP.NET Core Web API
