@@ -16,15 +16,15 @@ A partir de uma simples foto, a aplicação é capaz de:
 📝 Extrair e organizar informações em formato estruturado<br><br>
 🧠 Como funciona<br>
 <br>
-O usuário envia uma imagem via endpoint (multipart/form-data)
-A API processa a imagem utilizando serviços de IA
-São extraídas informações como:
-Objetos detectados
-Texto (OCR)
-Cores dominantes
-Contexto da imagem
-Os dados são enriquecidos e retornados como JSON
-📡 Endpoint principal
+O usuário envia uma imagem via endpoint (multipart/form-data)<br>
+A API processa a imagem utilizando serviços de IA<br>
+São extraídas informações como:<br><br>
+Objetos detectados<br>
+Texto (OCR)<br>
+Cores dominantes<br>
+Contexto da imagem<br>
+Os dados são enriquecidos e retornados como JSON<br><br>
+📡 Endpoint principal<br><br>
 Upload de imagem
 <br>
 POST /api/Product/File
