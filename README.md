@@ -64,12 +64,19 @@ curl -X 'POST' \
 🎯 Funcionalidades
 
 ✔️ Upload de imagens via API REST
+
 ✔️ Extração de texto (OCR)
+
 ✔️ Detecção de objetos e contexto
+
 ✔️ Geração automática de tags
+
 ✔️ Identificação de cores predominantes
+
 ✔️ Classificação do produto
+
 ✔️ Geração de descrição inteligente
+
 ✔️ Sugestão de preço baseada no item
 
 🛠️ Tecnologias utilizadas
