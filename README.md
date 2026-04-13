@@ -14,7 +14,7 @@ A partir de uma simples foto, a aplicação é capaz de:
 ✨ Gerar descrições inteligentes (ex: "mulher anjo segurando uma espada")<br><br>
 💰 Sugerir um valor estimado do produto<br><br>
 📝 Extrair e organizar informações em formato estruturado<br><br>
-** Como funciona**<br>
+**Como funciona**<br>
 <br>
 O usuário envia uma imagem via endpoint (multipart/form-data)<br>
 A API processa a imagem utilizando serviços de IA<br>
