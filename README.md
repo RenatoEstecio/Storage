@@ -93,7 +93,7 @@ Serviços de IA (Computer Vision / NLP)
 Armazenamento em nuvem (ex: AWS S3)
 
 <br>
-💡 Casos de uso
+💡 Casos de uso<br>
 <br>
 E-commerce (cadastro automático de produtos)
 Marketplaces
@@ -102,7 +102,7 @@ Organização de catálogos
 Automação de inventário
 
 <br>
-📈 Diferenciais
+📈 Diferenciais<br>
 <br>
 Reduz esforço manual no cadastro de produtos
 Melhora SEO com tags automáticas
@@ -110,6 +110,6 @@ Enriquece dados com descrição inteligente
 Escalável e fácil de integrar
 
 <br>
-👨‍💻 Autor
+👨‍💻 Autor<br>
 <br>
 Renato Estecio
