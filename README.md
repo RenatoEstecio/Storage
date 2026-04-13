@@ -14,7 +14,7 @@ A partir de uma simples foto, a aplicação é capaz de:
 ✨ Gerar descrições inteligentes (ex: "mulher anjo segurando uma espada")<br><br>
 💰 Sugerir um valor estimado do produto<br><br>
 📝 Extrair e organizar informações em formato estruturado<br>
-<br><br> [**Front-End(Opcional)**](https://github.com/RenatoEstecio/WebStorage)<br><br>
+<br><br> 
 **Como funciona**<br>
 <br>
 O usuário envia uma imagem via endpoint (multipart/form-data)<br>
@@ -113,7 +113,7 @@ Melhora SEO com tags automáticas
 Enriquece dados com descrição inteligente
 Escalável e fácil de integrar
 
-<br><br>
+<br><br>[**Front-End(Opcional)**](https://github.com/RenatoEstecio/WebStorage)<br><br>
 👨‍💻 Autor<br>
 <br>
 Renato Estecio
