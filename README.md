@@ -40,6 +40,9 @@ curl -X 'POST' \
 ![PS5](https://github.com/user-attachments/assets/ee58771e-631b-4f20-b8e2-8a39684b5104)
   <br>
 📦 Exemplo de resposta
+ <br> <br>
+![Img](https://github.com/user-attachments/assets/e2916478-fe40-4c8a-bd69-499f6ad15db9)
+ <br> <br>
 {
   "name": "Console PlayStation 5 com jogos",
   "price": 4800,
