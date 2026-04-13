@@ -64,7 +64,7 @@ curl -X 'POST' \
 
 <br>
 🎯 Funcionalidades
-<br>
+<br><br>
 
 ✔️ Upload de imagens via API REST
 
