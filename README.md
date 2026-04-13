@@ -83,9 +83,10 @@ curl -X 'POST' \
 
 
 
+
 🛠️ Tecnologias utilizadas
 
-.NET 8
+.NET 10
 ASP.NET Core Web API
 Serviços de IA (Computer Vision / NLP)
 Armazenamento em nuvem (ex: AWS S3)
