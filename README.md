@@ -36,7 +36,7 @@ curl -X 'POST' \
   -H 'accept: */*' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@produto.jpg;type=image/jpeg'
-<br>
+<br><br><br>
 ![PS5](https://github.com/user-attachments/assets/ee58771e-631b-4f20-b8e2-8a39684b5104)
   <br>
 📦 Exemplo de resposta
