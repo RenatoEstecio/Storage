@@ -1,20 +1,20 @@
 **Product Vision API (Storage)**
-<br>
+<br><br>
 Uma aplicação inteligente que recebe uma imagem de produto e extrai automaticamente informações relevantes usando visão computacional e IA.
-<br>
+<br><br>
 🚀 Sobre o projeto
 
 O Product Vision API é uma API que analisa imagens de produtos e retorna dados estruturados úteis para e-commerce, catálogos e sistemas de recomendação.
 <br>
 A partir de uma simples foto, a aplicação é capaz de:
 <br><br>
-🏷️ Gerar tags automáticas com base no conteúdo da imagem<br>
-🎨 Identificar cores predominantes<br>
-🧠 Classificar o tipo do item (ex: computador, console, celular)<br>
-✨ Gerar descrições inteligentes (ex: "mulher anjo segurando uma espada")<br>
-💰 Sugerir um valor estimado do produto<br>
-📝 Extrair e organizar informações em formato estruturado<br>
-🧠 Como funciona<br><br>
+🏷️ Gerar tags automáticas com base no conteúdo da imagem<br><br>
+🎨 Identificar cores predominantes<br><br>
+🧠 Classificar o tipo do item (ex: computador, console, celular)<br><br>
+✨ Gerar descrições inteligentes (ex: "mulher anjo segurando uma espada")<br><br>
+💰 Sugerir um valor estimado do produto<br><br>
+📝 Extrair e organizar informações em formato estruturado<br><br>
+🧠 Como funciona<br>
 <br>
 O usuário envia uma imagem via endpoint (multipart/form-data)
 A API processa a imagem utilizando serviços de IA
