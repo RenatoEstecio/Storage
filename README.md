@@ -25,8 +25,11 @@ Contexto da imagem
 Os dados são enriquecidos e retornados como JSON
 📡 Endpoint principal
 Upload de imagem
+
 POST /api/Product/File
+
 Exemplo usando cURL
+
 curl -X 'POST' \
   'https://localhost:44327/api/Product/File' \
   -H 'accept: */*' \
