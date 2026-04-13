@@ -31,7 +31,7 @@ POST /api/Product/File
 Exemplo usando cURL
 
 curl -X 'POST' \
-  'https://localhost:44327/api/Product/File' \
+  '/api/Product/File' \
   -H 'accept: */*' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@produto.jpg;type=image/jpeg'
