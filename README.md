@@ -60,7 +60,9 @@ curl -X 'POST' \
   "imgUrl": "https://.../image.jpg",
   "type": "Console PlayStation 5"
 }
+
 🎯 Funcionalidades
+
 ✔️ Upload de imagens via API REST
 ✔️ Extração de texto (OCR)
 ✔️ Detecção de objetos e contexto
