@@ -1,14 +1,20 @@
-﻿using Amazon.S3;
+﻿using Amazon.Runtime.Internal.Endpoints.StandardLibrary;
+using Amazon.S3;
 using Amazon.S3.Transfer;
+using Library.DTO;
 using Library.Util;
 using Microsoft.Extensions.Configuration;
+using SharpCompress.Compressors.Xz;
 using System;
+using System.Buffers.Text;
 using System.Collections.Generic;
+using System.IO;
+using System.Net.Mime;
 using System.Text;
 
 namespace Library.BLL
 {
-    public class S3ServiceBLL
+    public class S3ServiceBLL : IImageStorageService
     {
         private readonly IAmazonS3 _s3;
         
@@ -23,8 +29,8 @@ namespace Library.BLL
             );
         }
 
-        public async Task<string> UploadArquivoAsync(Stream file, string? name, string? content)
-        {
+        public async Task<(string Url, string Base64)> SaveAsync(Stream file, string? name, string? content)
+        {                     
             try
             {
                 if (name is null)
@@ -34,6 +40,9 @@ namespace Library.BLL
                     content = "image/jpeg";
 
                 string key = GenHash() + name;
+
+                using var ms = new MemoryStream();
+                await file.CopyToAsync(ms);
 
                 var request = new Amazon.S3.Model.PutObjectRequest
                 {
@@ -45,7 +54,11 @@ namespace Library.BLL
 
                 var response = await _s3.PutObjectAsync(request);
 
-                return urlBase + key;
+                string image64 = Convert.ToBase64String(ms.ToArray());
+
+                string url = urlBase + key;
+
+                return (url, image64);
             }
             catch (Exception e)
             {
@@ -53,6 +66,8 @@ namespace Library.BLL
             }
         }
 
-        string GenHash() => Guid.NewGuid().ToString().Substring(0, 8);
+        string GenHash(int length = 8) => Guid.NewGuid().ToString().Substring(0, length);
+
+        
     }
 }

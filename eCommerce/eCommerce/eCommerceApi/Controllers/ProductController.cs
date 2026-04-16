@@ -1,6 +1,8 @@
 ﻿using Library.BLL;
 using Library.DTO;
 using Library.Util;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -11,52 +13,23 @@ namespace eCommerceApi.Controllers
     [Route("api/[controller]")]
     [Produces("application/json")]
     [ApiController]
-    public class ProductController : ControllerBase  
-    {
-        private readonly ProductBLL _productBLL;
-        Guid TOKEN = new Guid("0790A233-6B43-43EE-BD60-63538029A819");
-
-        public ProductController(ProductBLL productBLL)
+    public class ProductController : AuthController
+    {       
+        private readonly ProductService _productService;
+       
+        public ProductController(ProductService productService)
         {
-            _productBLL = productBLL;
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Item([FromHeader] Guid Token, Product product)
-        {
-            try
-            {
-                if (Token != TOKEN)
-                    return Unauthorized("Falha ao autenticar");
-               
-               
-
-                ProductStore? prod = await _productBLL.Verify(product);
-
-                if (prod == null)
-                    return BadRequest("Imagem não compatível");
-
-                return Ok(prod);
-            }
-            catch (CustomException ex)
-            {
-                return StatusCode((int)ex.StatusCode, ex.Message);
-            }
-            catch
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError);
-            }
-        }
+            _productService = productService;
+        }       
 
         [HttpDelete]
         public async Task<IActionResult> DeleteItem([FromHeader] Guid Token, string? query)
         {
             try
             {
-                if (Token != TOKEN)
-                    return Unauthorized("Falha ao autenticar");
-             
-                bool result = await _productBLL.DeleteByName(query);
+                Authorize();
+
+                bool result = await _productService.DeleteByName(query);
 
                 if (result)
                     return Ok();
@@ -74,12 +47,11 @@ namespace eCommerceApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Item(string? query)
+        public async Task<IActionResult> Get(string? query)
         {
             try
-            {                
-                
-                List<ProductStore>? prods = await _productBLL.GetByQuery(query);
+            {                              
+                List<ProductStore>? prods = await _productService.GetByQuery(query);
                 
                 if (prods == null)
                     return BadRequest("Nenhum Resultado Encontrado");
@@ -93,23 +65,20 @@ namespace eCommerceApi.Controllers
             catch
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
-            }
-
-            
+            }           
         }
 
-        [HttpPost("File")]
+        [HttpPost]
         public async Task<IActionResult> Upload([FromHeader] Guid Token, IFormFile file)
         {
             try
             {
-                if (Token != TOKEN)
-                    return Unauthorized("Falha ao autenticar");
+                Authorize();
 
                 using var stream = file.OpenReadStream();
+
+                ProductStore? prod = await _productService.AnalyzeProductImageAsync(stream, file.FileName, file.ContentType);
                
-                ProductStore? prod = await _productBLL.Verify(stream, file.FileName, file.ContentType);
-           
                 if (prod is not null)
                     return Ok(prod);
                 else

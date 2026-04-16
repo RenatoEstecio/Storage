@@ -1,4 +1,9 @@
-﻿using Library.BLL;
+﻿using eCommerceApi;
+using Library.BLL;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +15,7 @@ builder.Services.AddOpenApi();
 // 🔹 Adiciona Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddControllers();
 
 builder.Services.AddCors(options =>
@@ -24,9 +30,15 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddScoped<DataBaseBLL>();
-builder.Services.AddScoped<ProductBLL>();
-builder.Services.AddScoped<S3ServiceBLL>();
 builder.Services.AddScoped<GeminiBLL>();
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductAIService, ProductAIService>();
+builder.Services.AddScoped<IImageStorageService, S3ServiceBLL>();
+builder.Services.AddScoped<ProductService>();//Novo
+
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -45,6 +57,8 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Minha API V1");
     c.RoutePrefix = string.Empty; // 👈 isso aqui
 });
+
+
 
 app.UseSwagger();
 app.UseSwaggerUI();

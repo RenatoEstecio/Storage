@@ -6,14 +6,7 @@ using System.Text;
 
 namespace Library.DTO
 {
-    public class Product
-    {     
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public string? Img64 { get; set; }
-        public string? ImgLink { get; set; }
-    }
-
+    
     [BsonIgnoreExtraElements]    
     public class ProductStore : IHasName
     {

@@ -5,6 +5,7 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
 namespace Library.BLL
@@ -55,11 +56,15 @@ namespace Library.BLL
             {
                 var filter = Builders<ProductStore>.Filter.Or(
                     Builders<ProductStore>.Filter.Regex(
-                        "Tags",
-                        new MongoDB.Bson.BsonRegularExpression(query, "i")
+                        "Name",
+                        new MongoDB.Bson.BsonRegularExpression($".*{Regex.Escape(query)}.*", "i")
                     ),
                     Builders<ProductStore>.Filter.Regex(
                         "Type",
+                        new MongoDB.Bson.BsonRegularExpression(query, "i")
+                    ),
+                    Builders<ProductStore>.Filter.Regex(
+                        "Tags",
                         new MongoDB.Bson.BsonRegularExpression(query, "i")
                     )
                 );
