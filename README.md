@@ -28,7 +28,7 @@ Os dados são enriquecidos e retornados como JSON<br><br>
 📡 Endpoint principal<br><br>
 Upload de imagem
 <br>
-POST /api/Product/File
+<b style="color: lightgreen;">POST</b> /api/Product/File
 
 Exemplo usando cURL
 
