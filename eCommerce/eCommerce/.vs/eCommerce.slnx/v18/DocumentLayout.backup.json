@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|solutionrelative:library\\library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\bll\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|solutionrelative:library\\bll\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,11 +110,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 701,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "eCommerceApi\\appsettings.Development.json",
@@ -122,8 +122,7 @@
               "RelativeToolTip": "eCommerceApi\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-13T19:36:12.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T19:36:12.81Z"
             },
             {
               "$type": "Document",
@@ -139,15 +138,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "eCommerceApi\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\ProductController.cs",
               "RelativeToolTip": "eCommerceApi\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAiwDIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAABCwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T01:55:24.869Z"
+              "WhenOpened": "2026-04-07T01:55:24.869Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -199,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Library.csproj",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\Library.csproj",
               "RelativeDocumentMoniker": "Library\\Library.csproj",
@@ -207,12 +207,11 @@
               "RelativeToolTip": "Library\\Library.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-09T21:50:57.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-09T21:50:57.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DataBaseBLL.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\BLL\\DataBaseBLL.cs",
               "RelativeDocumentMoniker": "Library\\BLL\\DataBaseBLL.cs",
@@ -224,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\appsettings.json",
               "RelativeDocumentMoniker": "eCommerceApi\\appsettings.json",
@@ -423,10 +422,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
