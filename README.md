@@ -94,14 +94,13 @@ curl -X 'POST' \
 .NET 10<br>
 ASP.NET Core Web API<br>
 Serviços de IA (Computer Vision / NLP)<br>
-Armazenamento em nuvem (ex: AWS S3)
+Armazenamento em nuvem (AWS S3)
 
 <br><br>
 Contêiner:<br>
 🐳 Docker
 <br><br>
 
-<br><br>
 🧪 Testes Automatizados
 <br><br>
 
