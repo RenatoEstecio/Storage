@@ -1,4 +1,5 @@
-﻿using Library.Util;
+﻿using Library.DTO;
+using Library.Util;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -6,7 +7,7 @@ namespace eCommerceApi.Controllers
 {
     public class AuthController : ControllerBase
     {
-        Guid TOKEN = new Guid("0790A233-6B43-43EE-BD60-63538029A819");
+        Guid TOKEN = Auth.TOKEN();
 
         [ApiExplorerSettings(IgnoreApi = true)]
         public bool Authorize()
