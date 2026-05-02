@@ -9,6 +9,7 @@ appsettings.Development.json
 .eCommerce\eCommerceApi\appsettings.Development.json
 eCommerce\eCommerceApi\appsettings.Development.json
 .settings/
+.vs/
 
 # Executables
 *.swf
