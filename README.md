@@ -97,6 +97,28 @@ Serviços de IA (Computer Vision / NLP)
 Armazenamento em nuvem (ex: AWS S3)
 
 <br><br>
+🐳 Docker
+<br><br>
+
+<br><br>
+🧪 Testes Automatizados
+<br><br>
+
+O projeto conta com testes automatizados utilizando **xUnit**, garantindo a validação das regras de negócio e maior segurança nas alterações.
+
+São cobertos cenários como:
+<br><br>
+✔️ Autenticação (token válido e inválido)<br>
+✔️ Respostas esperadas da API (200, 400, 401)<br>
+✔️ Fluxos principais do controller<br>
+
+<br><br>
+⚙️ Integração Contínua (CI)
+<br><br>
+
+O projeto utiliza **GitHub Actions** para integração contínua.
+
+<br><br>
 💡 Casos de uso<br>
 <br>
 E-commerce (cadastro automático de produtos)
