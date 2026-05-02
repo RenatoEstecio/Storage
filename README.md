@@ -95,13 +95,11 @@ curl -X 'POST' \
 ASP.NET Core Web API<br>
 Serviços de IA (Computer Vision / NLP)<br>
 Armazenamento em nuvem (AWS S3)
+<br><br>
+⚙️ Integração Contínua (CI): O projeto utiliza **GitHub Actions** para integração contínua.
 <br>
-⚙️ Integração Contínua (CI)
 <br>
-O projeto utiliza **GitHub Actions** para integração contínua.
-<br>
-Contêiner:<br>
-🐳 Docker
+🐳 Contêiners: Docker<br>
 <br>
 
 🧪 Testes Automatizados:
