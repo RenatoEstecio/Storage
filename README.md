@@ -88,13 +88,13 @@ curl -X 'POST' \
 
 
 
-<br><br>
-🛠️ Tecnologias utilizadas<br>
 <br>
-.NET 10<br>
-ASP.NET Core Web API<br>
+🛠️ Tecnologias utilizadas:<br>
+<br>
+**.NET 10**<br>
+**ASP.NET Core Web API**<br>
 Serviços de IA (Computer Vision / NLP)<br>
-Armazenamento em nuvem (AWS S3)
+Armazenamento em nuvem (**AWS S3**)
 <br><br>
 ⚙️ Integração Contínua (CI): O projeto utiliza **GitHub Actions** para integração contínua.
 <br>
@@ -113,9 +113,7 @@ São cobertos cenários como:
 ✔️ Respostas esperadas da API (200, 400, 401)<br>
 ✔️ Fluxos principais do controller<br>
 
-
-
-<br><br>
+<br>
 💡 Casos de uso<br>
 <br>
 E-commerce (cadastro automático de produtos)
