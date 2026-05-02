@@ -19,3 +19,5 @@ eCommerce\eCommerceApi\appsettings.Development.json
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+/eCommerce/eCommerce/.vs/eCommerce.slnx/FileContentIndex/2efc1586-89b0-4997-b9df-148e1e8bac77.vsidx
+/eCommerce/eCommerce/.vs/eCommerce.slnx/FileContentIndex/dfa33467-be3c-4c0e-9c8d-f40a32b7b8b0.vsidx
