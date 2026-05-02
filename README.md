@@ -99,10 +99,10 @@ Armazenamento em nuvem (AWS S3)
 <br><br>
 Contêiner:<br>
 🐳 Docker
-<br><br>
+<br>
 
-🧪 Testes Automatizados
-<br><br>
+🧪 Testes Automatizados:
+<br>
 
 O projeto conta com testes automatizados utilizando **xUnit**, garantindo a validação das regras de negócio e maior segurança nas alterações.
 
