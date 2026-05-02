@@ -91,8 +91,8 @@ curl -X 'POST' \
 <br>
 🛠️ Tecnologias utilizadas:<br>
 <br>
-**.NET 10** <br>
-**ASP.NET Core Web API** <br>
+<b>.NET 10</b>b> <br>
+<b>ASP.NET Core Web API</b>b><br>
 Serviços de IA (Computer Vision / NLP)<br>
 Armazenamento em nuvem (**AWS S3**)
 <br><br>
