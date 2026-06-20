@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="eCommerceApi.Tests/eCommerceApi.Tests.csproj" />
+  <Project Path="CommerceWorker/eCommerceWorker.csproj" Id="61be0f23-785d-4fb7-881f-abdec0780819" />
   <Project Path="eCommerceApi/eCommerceApi.csproj" />
   <Project Path="Library/Library.csproj" />
 </Solution>

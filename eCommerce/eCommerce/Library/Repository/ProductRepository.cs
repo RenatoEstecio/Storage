@@ -17,7 +17,7 @@ public class ProductRepository : IProductRepository
 
     public async Task<List<ProductStore>> GetByQueryAsync(string? query)
     {
-        return await _db.Get(query);
+        return await _db.GetProductStore(query);
     }
 
     public async Task<bool> DeleteByNameAsync(string name)

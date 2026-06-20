@@ -1,5 +1,8 @@
-﻿using eCommerceApi;
+﻿using Amazon.S3;
+using Amazon.SQS;
+using eCommerceApi;
 using Library.BLL;
+using Library.Util;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi;
@@ -35,8 +38,15 @@ builder.Services.AddScoped<GeminiBLL>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductAIService, ProductAIService>();
 builder.Services.AddScoped<IImageStorageService, S3ServiceBLL>();
-builder.Services.AddScoped<ProductService>();//Novo
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<OrderService>();
+builder.Services.Configure<SqsOptions>(
+    builder.Configuration.GetSection("Sqs"));
 
+builder.Services.AddAWSService<IAmazonSQS>();
+
+builder.Services.AddScoped<ISqsSendService, SqsSendService>();
 
 builder.Services.AddAuthorization();
 

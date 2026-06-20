@@ -46,7 +46,7 @@ namespace Library.BLL
             return result.DeletedCount > 0;
         }
 
-        public async Task<List<ProductStore>> Get(string? query)
+        public async Task<List<ProductStore>> GetProductStore(string? query)
         {
             var database = db.GetDatabase(catalog);
             var collection = database.GetCollection<ProductStore>("Product");
@@ -84,6 +84,45 @@ namespace Library.BLL
 
             return result;
         }
-     
+
+        public async Task<List<Order>> GetOrder(string? query)
+        {
+            var database = db.GetDatabase(catalog);
+            var collection = database.GetCollection<Order>("Order");
+            List<Order> result;
+
+            if (query != null && query.Length > 0)
+            {
+                var filter = Builders<Order>.Filter.Or(
+                    Builders<Order>.Filter.Regex(
+                        "Name",
+                        new MongoDB.Bson.BsonRegularExpression($".*{Regex.Escape(query)}.*", "i")
+                    ),
+                    Builders<Order>.Filter.Regex(
+                        "Type",
+                        new MongoDB.Bson.BsonRegularExpression(query, "i")
+                    ),
+                    Builders<Order>.Filter.Regex(
+                        "Tags",
+                        new MongoDB.Bson.BsonRegularExpression(query, "i")
+                    )
+                );
+
+                result = await collection
+                .Find(filter)
+                .Limit(GET_LIMIT)
+                .ToListAsync();
+            }
+            else
+            {
+                result = await collection
+                .Find(Builders<Order>.Filter.Empty)
+                .Limit(GET_LIMIT)
+                .ToListAsync();
+            }
+
+            return result;
+        }
+
     }
 }
