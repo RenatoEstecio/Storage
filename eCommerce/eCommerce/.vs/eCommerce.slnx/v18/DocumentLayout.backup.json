@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{E707D099-58CB-DE4F-5DAE-17DC336E989A}|eCommerceApi.Tests\\eCommerceApi.Tests.csproj|solutionrelative:ecommerceapi.tests\\controllers\\productcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\dto\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|solutionrelative:library\\dto\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\dto\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|solutionrelative:library\\dto\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\dto\\productstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|solutionrelative:library\\dto\\productstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,50 +113,37 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1022,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 707,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Auth.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\DTO\\Auth.cs",
-              "RelativeDocumentMoniker": "Library\\DTO\\Auth.cs",
-              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\DTO\\Auth.cs",
-              "RelativeToolTip": "Library\\DTO\\Auth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T21:25:06.411Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ProductControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
               "RelativeDocumentMoniker": "eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
-              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs*",
-              "RelativeToolTip": "eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs*",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAvwDoAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
+              "RelativeToolTip": "eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAADIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T20:33:12.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "eCommerceApi\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\AuthController.cs",
               "RelativeToolTip": "eCommerceApi\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAASwA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:10:45.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:10:45.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\Interface\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Library\\Interface\\IProductRepository.cs",
@@ -168,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ProductStore.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\DTO\\ProductStore.cs",
               "RelativeDocumentMoniker": "Library\\DTO\\ProductStore.cs",
@@ -180,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IImageStorageService.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\Interface\\IImageStorageService.cs",
               "RelativeDocumentMoniker": "Library\\Interface\\IImageStorageService.cs",
@@ -204,16 +191,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "eCommerceApi\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\ProductController.cs",
               "RelativeToolTip": "eCommerceApi\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAC4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA2wBoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T01:55:24.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T01:55:24.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\DTO\\Auth.cs",
+              "RelativeDocumentMoniker": "Library\\DTO\\Auth.cs",
+              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\DTO\\Auth.cs",
+              "RelativeToolTip": "Library\\DTO\\Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:25:06.411Z"
             },
             {
               "$type": "Document",
@@ -225,8 +223,7 @@
               "RelativeToolTip": "Library\\BLL\\WebRequestBLL.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T16:52:08.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T16:52:08.737Z"
             },
             {
               "$type": "Document",
@@ -238,8 +235,7 @@
               "RelativeToolTip": "Library\\Service\\ProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T15:39:34.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T15:39:34.57Z"
             },
             {
               "$type": "Document",
@@ -299,8 +295,7 @@
               "RelativeToolTip": "Library\\BLL\\DataBaseBLL.cs",
               "ViewState": "AgIAACoAAAAAAAAAAIAxwDcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T14:55:39.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T14:55:39.878Z"
             },
             {
               "$type": "Document",
@@ -324,8 +319,7 @@
               "RelativeToolTip": "Library\\BLL\\GeminiAiBLL.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwDAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-06T00:12:58.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-06T00:12:58.329Z"
             },
             {
               "$type": "Document",
@@ -337,8 +331,7 @@
               "RelativeToolTip": "Library\\BLL\\ProductMapper.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA2wCUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T15:46:57.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T15:46:57.101Z"
             },
             {
               "$type": "Document",
@@ -350,8 +343,7 @@
               "RelativeToolTip": "Library\\BLL\\S3ServiceBLL.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAywEIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T21:24:42.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T21:24:42.423Z"
             },
             {
               "$type": "Document",
@@ -387,8 +379,7 @@
               "RelativeToolTip": "Library\\Service\\ProductAIService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA3wBQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T15:49:03.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T15:49:03.756Z"
             },
             {
               "$type": "Document",
@@ -441,7 +432,7 @@
           ]
         },
         {
-          "DockedWidth": 274,
+          "DockedWidth": 589,
           "SelectedChildIndex": -1,
           "Children": [
             {

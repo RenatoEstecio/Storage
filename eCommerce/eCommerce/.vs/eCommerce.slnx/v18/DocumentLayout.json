@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\bll\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|solutionrelative:library\\bll\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E707D099-58CB-DE4F-5DAE-17DC336E989A}|eCommerceApi.Tests\\eCommerceApi.Tests.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi.tests\\controllers\\productcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E707D099-58CB-DE4F-5DAE-17DC336E989A}|eCommerceApi.Tests\\eCommerceApi.Tests.csproj|solutionrelative:ecommerceapi.tests\\controllers\\productcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\dto\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|solutionrelative:ecommerceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\library\\bll\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D32E270C-7028-7BD8-792D-C69059A28440}|Library\\Library.csproj|solutionrelative:library\\bll\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFF49090-42E7-A6CA-7333-88E768461EA8}|eCommerceApi\\eCommerceApi.csproj|c:\\users\\pichau\\onedrive\\documentos\\github\\storage\\ecommerce\\ecommerce\\ecommerceapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -114,37 +114,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 707,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProductControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
               "RelativeDocumentMoniker": "eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
               "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
               "RelativeToolTip": "eCommerceApi.Tests\\Controllers\\ProductControllerTests.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAASwCkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAADIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T20:33:12.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "eCommerceApi\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "eCommerceApi\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAASwA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:10:45.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\Interface\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Library\\Interface\\IProductRepository.cs",
@@ -156,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProductStore.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\DTO\\ProductStore.cs",
               "RelativeDocumentMoniker": "Library\\DTO\\ProductStore.cs",
@@ -168,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IImageStorageService.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\Interface\\IImageStorageService.cs",
               "RelativeDocumentMoniker": "Library\\Interface\\IImageStorageService.cs",
@@ -192,20 +179,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "eCommerceApi\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\ProductController.cs",
               "RelativeToolTip": "eCommerceApi\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA2wBoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAASwDIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T01:55:24.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Auth.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\DTO\\Auth.cs",
               "RelativeDocumentMoniker": "Library\\DTO\\Auth.cs",
@@ -214,6 +201,32 @@
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T21:25:06.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataBaseBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\BLL\\DataBaseBLL.cs",
+              "RelativeDocumentMoniker": "Library\\BLL\\DataBaseBLL.cs",
+              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\BLL\\DataBaseBLL.cs",
+              "RelativeToolTip": "Library\\BLL\\DataBaseBLL.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T14:55:39.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "eCommerceApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "eCommerceApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAASwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T01:10:45.629Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -230,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\Service\\ProductService.cs",
               "RelativeDocumentMoniker": "Library\\Service\\ProductService.cs",
@@ -243,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "eCommerceApi.csproj",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\eCommerceApi.csproj",
               "RelativeDocumentMoniker": "eCommerceApi\\eCommerceApi.csproj",
@@ -267,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "eCommerceApi\\appsettings.Development.json",
@@ -279,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Library.csproj",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\Library.csproj",
               "RelativeDocumentMoniker": "Library\\Library.csproj",
@@ -292,19 +305,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DataBaseBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\BLL\\DataBaseBLL.cs",
-              "RelativeDocumentMoniker": "Library\\BLL\\DataBaseBLL.cs",
-              "ToolTip": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\Library\\BLL\\DataBaseBLL.cs",
-              "RelativeToolTip": "Library\\BLL\\DataBaseBLL.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAIAxwDcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T14:55:39.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Pichau\\OneDrive\\Documentos\\GitHub\\Storage\\eCommerce\\eCommerce\\eCommerceApi\\appsettings.json",
               "RelativeDocumentMoniker": "eCommerceApi\\appsettings.json",
@@ -451,10 +451,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
