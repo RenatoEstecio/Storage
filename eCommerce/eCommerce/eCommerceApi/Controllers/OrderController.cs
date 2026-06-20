@@ -53,8 +53,12 @@ namespace eCommerceApi.Controllers
         {
             try
             {
-              
-                return Ok();
+                List<Order>? orders = await _orderService.GetByQuery(query);
+
+                if (orders == null)
+                    return BadRequest("Nenhum Resultado Encontrado");
+
+                return Ok(orders);
             }
             catch (CustomException ex)
             {
