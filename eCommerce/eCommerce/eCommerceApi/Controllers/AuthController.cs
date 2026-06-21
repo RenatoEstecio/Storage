@@ -1,22 +1,45 @@
-﻿using Library.Util;
+using Library.DTO;
+using Library.Util;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
 namespace eCommerceApi.Controllers
 {
+    [Route("api/[controller]")]
+    [Produces("application/json")]
+    [ApiController]
     public class AuthController : ControllerBase
     {
-        Guid TOKEN = new Guid("0790A233-6B43-43EE-BD60-63538029A819");
+        private readonly AuthService _authService;
 
-        [ApiExplorerSettings(IgnoreApi = true)]
-        public bool Authorize()
+        public AuthController(AuthService authService)
         {
-            var token = Request.Headers["Token"].FirstOrDefault();
+            _authService = authService;
+        }
 
-            if (!string.IsNullOrEmpty(token) && TOKEN.ToString().ToUpper() == token)
-                return true;
-            else
-                throw new CustomException("Falha ao autenticar", HttpStatusCode.Unauthorized);
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(LoginRequest request)
+        {
+            try
+            {
+                var userAgent = Request.Headers.UserAgent.ToString();
+                var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
+                var operatingSystem = UserAgentParser.ParseOperatingSystem(userAgent);
+
+                var context = new RequestContext(ipAddress, operatingSystem, userAgent);
+
+                var response = await _authService.LoginAsync(request, context);
+
+                return Ok(response);
+            }
+            catch (CustomException ex)
+            {
+                return StatusCode((int)ex.StatusCode, ex.Message);
+            }
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
         }
     }
 }

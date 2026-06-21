@@ -17,6 +17,7 @@
     <PackageReference Include="AWSSDK.S3" Version="4.0.20.4" />
     <PackageReference Include="AWSSDK.SQS" Version="4.0.2.32" />
     <PackageReference Include="Google_GenerativeAI" Version="3.6.4" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
   </ItemGroup>
 
 </Project>

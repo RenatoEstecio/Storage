@@ -13,7 +13,7 @@ namespace eCommerceApi.Controllers
     [Route("api/[controller]")]
     [Produces("application/json")]
     [ApiController]
-    public class OrderController : AuthController
+    public class OrderController : ControllerBase
     {
         private readonly OrderService _orderService;
         private readonly ISqsSendService _sqsService;
@@ -23,31 +23,8 @@ namespace eCommerceApi.Controllers
             _orderService = orderService;
             _sqsService = sqsService;
         }
-        
-        [HttpDelete]
-        public async Task<IActionResult> DeleteItem([FromHeader] Guid Token, string? query)
-        {
-            try
-            {
-                Authorize();
 
-                bool result = await _orderService.DeleteByName(query);
-
-                if (result)
-                    return Ok();
-                else
-                    return BadRequest();
-            }
-            catch (CustomException ex)
-            {
-                return StatusCode((int)ex.StatusCode, ex.Message);
-            }
-            catch
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError);
-            }
-        }
-
+      
         [HttpGet]
         public async Task<IActionResult> Get(string? query)
         {
@@ -70,13 +47,12 @@ namespace eCommerceApi.Controllers
             }
         }
 
+        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Create([FromHeader] Guid Token, Order post)
+        public async Task<IActionResult> Create(Order post)
         {
             try
             {
-                Authorize();
-
                 await _sqsService.SendMessageAsync(post);
 
                 return Ok();

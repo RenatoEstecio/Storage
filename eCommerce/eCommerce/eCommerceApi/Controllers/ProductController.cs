@@ -13,22 +13,21 @@ namespace eCommerceApi.Controllers
     [Route("api/[controller]")]
     [Produces("application/json")]
     [ApiController]
-    public class ProductController : AuthController
-    {       
+    public class ProductController : ControllerBase
+    {
         private readonly ProductService _productService;
-       
+
         public ProductController(ProductService productService)
         {
             _productService = productService;
-        }       
+        }
 
+        [Authorize]
         [HttpDelete]
-        public async Task<IActionResult> DeleteItem([FromHeader] Guid Token, string? query)
+        public async Task<IActionResult> DeleteItem(string? query)
         {
             try
             {
-                Authorize();
-
                 bool result = await _productService.DeleteByName(query);
 
                 if (result)
@@ -68,13 +67,12 @@ namespace eCommerceApi.Controllers
             }           
         }
 
+        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Upload([FromHeader] Guid Token, IFormFile file)
+        public async Task<IActionResult> Upload(IFormFile file)
         {
             try
             {
-                Authorize();
-
                 using var stream = file.OpenReadStream();
 
                 ProductStore? prod = await _productService.AnalyzeProductImageAsync(stream, file.FileName, file.ContentType);

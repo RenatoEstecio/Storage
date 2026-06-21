@@ -1,21 +1,20 @@
-﻿using eCommerceApi.Controllers;
-using Library.DTO;
-using Microsoft.AspNetCore.Http;
+using eCommerceApi.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using System.IO;
 using System.Threading.Tasks;
 using Xunit;
 
 public class ProductControllerTests
 {
     [Fact]
-    public async Task Delete_DeveRetornar401_QuandoTokenInvalido()
+    public async Task Delete_DeveRetornarOk_QuandoDeleteFunciona()
     {
         // Arrange
         var repoMock = new Mock<IProductRepository>();
         var storageMock = new Mock<IImageStorageService>();
         var aiMock = new Mock<IProductAIService>();
+
+        repoMock.Setup(r => r.DeleteByNameAsync("teste")).ReturnsAsync(true);
 
         var serviceMock = new Mock<ProductService>(
             repoMock.Object,
@@ -25,30 +24,22 @@ public class ProductControllerTests
 
         var controller = new ProductController(serviceMock.Object);
 
-        var httpContext = new DefaultHttpContext();
-        httpContext.Request.Headers["Token"] = "TOKEN_ERRADO";
-
-        controller.ControllerContext = new ControllerContext()
-        {
-            HttpContext = httpContext
-        };
-
         // Act
-        var result = await controller.DeleteItem(Guid.NewGuid(), "teste");
+        var result = await controller.DeleteItem("teste");
 
         // Assert
-        var obj = Assert.IsType<ObjectResult>(result);
-       
-        Assert.Equal(401, obj.StatusCode);       
+        Assert.IsType<OkResult>(result);
     }
 
     [Fact]
-    public async Task Delete_DeveRetornar400_QuandoTokenValido_E_DeleteFalha()
+    public async Task Delete_DeveRetornar400_QuandoDeleteFalha()
     {
         // Arrange
         var repoMock = new Mock<IProductRepository>();
         var storageMock = new Mock<IImageStorageService>();
         var aiMock = new Mock<IProductAIService>();
+
+        repoMock.Setup(r => r.DeleteByNameAsync("teste")).ReturnsAsync(false);
 
         var serviceMock = new Mock<ProductService>(
             repoMock.Object,
@@ -56,20 +47,10 @@ public class ProductControllerTests
             aiMock.Object
         );
 
-        
-
         var controller = new ProductController(serviceMock.Object);
 
-        var httpContext = new DefaultHttpContext();
-        httpContext.Request.Headers["Token"] = Auth.TOKEN().ToString().ToUpper();
-
-        controller.ControllerContext = new ControllerContext()
-        {
-            HttpContext = httpContext
-        };
-
         // Act
-        var result = await controller.DeleteItem(Guid.NewGuid(), "teste");
+        var result = await controller.DeleteItem("teste");
 
         // Assert
         Assert.IsType<BadRequestResult>(result);

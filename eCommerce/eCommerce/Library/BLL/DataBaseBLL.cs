@@ -85,6 +85,16 @@ namespace Library.BLL
             return result;
         }
 
+        public async Task<User?> GetUserByEmail(string email)
+        {
+            var database = db.GetDatabase(catalog);
+            var collection = database.GetCollection<User>("User");
+
+            var filter = Builders<User>.Filter.Eq(x => x.Email, email);
+
+            return await collection.Find(filter).FirstOrDefaultAsync();
+        }
+
         public async Task<List<Order>> GetOrder(string? query)
         {
             var database = db.GetDatabase(catalog);
