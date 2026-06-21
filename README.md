@@ -18,7 +18,8 @@ A partir de uma simples foto, a aplicação é capaz de:
 **Como funciona**<br>
 <br>
 O usuário envia uma imagem via endpoint (multipart/form-data)<br>
-A API processa a imagem utilizando serviços de IA<br>
+A API envia via mensageria para uma fila SQS<br>
+um serviço recebe e processa a imagem utilizando serviços de IA<br>
 São extraídas informações como:<br><br>
 Objetos detectados<br>
 Texto (OCR)<br>
