@@ -15,8 +15,9 @@ A partir de uma simples foto, a aplicação é capaz de:
 💰 Sugerir um valor estimado do produto<br><br>
 📝 Extrair e organizar informações em formato estruturado<br>
 <br><br> 
-**Como funciona**<br>
-<br>
+**Como funciona**<br><br><br>
+<img width="1750" height="950" alt="architecture" src="https://github.com/user-attachments/assets/42d5cf2d-26d4-456c-ae52-8ef644f9d4d6" />
+<br><br><br>
 O usuário envia uma imagem via endpoint (multipart/form-data)<br>
 A API envia via mensageria para uma fila SQS<br>
 um serviço recebe e processa a imagem utilizando serviços de IA<br>
