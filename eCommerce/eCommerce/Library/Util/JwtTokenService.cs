@@ -16,7 +16,7 @@ namespace Library.Util
             _options = options.Value;
         }
 
-        public LoginResponse GenerateToken(User user, RequestContext context)
+        public LoginResponse GenerateToken(User user, RequestContext context, string jti)
         {
             var expiresAt = DateTime.UtcNow.AddMinutes(_options.ExpirationMinutes);
 
@@ -24,7 +24,7 @@ namespace Library.Util
             {
                 new(JwtRegisteredClaimNames.Sub, user.Email),
                 new(JwtRegisteredClaimNames.Email, user.Email),
-                new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new(JwtRegisteredClaimNames.Jti, jti),
                 new("ip", context.IpAddress),
                 new("os", context.OperatingSystem),
                 new("user_agent", context.UserAgent)

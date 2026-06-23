@@ -1,7 +1,10 @@
 using Library.DTO;
 using Library.Util;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 using System.Net;
+using System.Security.Claims;
 
 namespace eCommerceApi.Controllers
 {
@@ -40,6 +43,20 @@ namespace eCommerceApi.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
+        }
+
+        [Authorize]
+        [HttpPost("Logout")]
+        public async Task<IActionResult> Logout()
+        {
+            var jti = User.FindFirstValue(JwtRegisteredClaimNames.Jti);
+
+            if (string.IsNullOrEmpty(jti))
+                return Unauthorized();
+
+            await _authService.LogoutAsync(jti);
+
+            return NoContent();
         }
     }
 }

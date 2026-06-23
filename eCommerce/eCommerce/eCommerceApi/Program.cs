@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
+using StackExchange.Redis;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 
 
@@ -72,9 +75,27 @@ builder.Services.AddScoped<ISqsSendService, SqsSendService>();
 
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
 builder.Services.Configure<CryptoOptions>(builder.Configuration.GetSection("Crypto"));
+builder.Services.Configure<RedisOptions>(builder.Configuration.GetSection("Redis"));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<JwtTokenService>();
 builder.Services.AddScoped<AuthService>();
+
+var redisOptions = builder.Configuration.GetSection("Redis").Get<RedisOptions>() ?? new RedisOptions();
+
+builder.Services.AddSingleton<IConnectionMultiplexer>(_ =>
+{
+    var configurationOptions = new ConfigurationOptions
+    {
+        EndPoints = { redisOptions.Db },
+        User = redisOptions.User,
+        Password = redisOptions.Pass,
+        AbortOnConnectFail = false
+    };
+
+    return ConnectionMultiplexer.Connect(configurationOptions);
+});
+
+builder.Services.AddScoped<ISessionService, RedisSessionService>();
 
 var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtOptions>() ?? new JwtOptions();
 
@@ -91,6 +112,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Key)),
             ValidateLifetime = true,
             ClockSkew = TimeSpan.Zero
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnTokenValidated = async context =>
+            {
+                var jti = context.Principal?.FindFirstValue(JwtRegisteredClaimNames.Jti);
+                var sessionService = context.HttpContext.RequestServices.GetRequiredService<ISessionService>();
+
+                if (string.IsNullOrEmpty(jti) || !await sessionService.ExistsAsync(jti))
+                {
+                    context.Fail("Sessão inválida ou expirada.");
+                }
+            }
         };
     });
 
