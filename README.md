@@ -5,9 +5,9 @@ Uma aplicação inteligente que recebe uma imagem de produto e extrai automatica
 🚀 Sobre o projeto
 
 O Product Vision API é uma API que analisa imagens de produtos e retorna dados estruturados úteis para e-commerce, catálogos e sistemas de recomendação.
-<br>
+<br><br><br>
 <img width="1750" height="950" alt="architecture" src="https://github.com/user-attachments/assets/42d5cf2d-26d4-456c-ae52-8ef644f9d4d6" />
-<br>
+<br><br><br>
 A partir de uma simples foto, a aplicação é capaz de:
 <br><br>
 🏷️ Gerar tags automáticas com base no conteúdo da imagem<br><br>
